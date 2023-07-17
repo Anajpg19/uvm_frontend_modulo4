@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <header>
+            <h1>{{title}}</h1>
+
+            <a href="/">Weather</a>
+            <a href="/">About</a>
+            <a href="/">Help</a>
+        </header>
+
+        <h1>Weather App</h1>
+
+        <form id="formClima">
+            <input id="buscar" type="text">
+            <button>Buscar</button>
+        </form>
+
+        <p id="mensaje-1"></p>
+        <p id="mensaje-2"></p>
+
+        <footer>
+            <p>Created by {{name}}</p>
+        </footer>
+    </div>
+    <script src="js/getWeather.js"></script>
+</body>
+
+</html>
