@@ -14,7 +14,7 @@ formClima.addEventListener('submit', (event) => {
         .then((response) => {
             response.json().then((data) => {
                 if(data.error) {
-                    mensaje1.textContent = data.error;
+                    mensaje1.textContent = data.error.info;
                 } else {
                     mensaje1.textContent = data.location.name;
                     mensaje2.textContent = data.current.weather_descriptions[0] + ", " + data.current.temperature + "°C";
